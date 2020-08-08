@@ -1,6 +1,6 @@
 ### General
 
-Time taken: Probably in total about a day. It took me longer to set up environments. Some wrong turns. Uneccasry complications. I feel I am rusty having not been commercially coding for almost 6 months. And unfamiliar with some techniques and the database schema.
+Time taken: Probably in total about a day/ 2 days. It took me longer to set up environments/ pipelines. Some wrong turns. Unnecassary complications. I feel I am rusty having not been commercially coding for almost 6 months!. And unfamiliar with some techniques and the database schema.
 
 IOS/Android: Only tested on IOS
 
