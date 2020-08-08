@@ -21,8 +21,8 @@ It would be interesting to take the ingredients and see if it was possible to ge
 - react-native
 - graphql
 
-### Pictures
+### Screenshots
 
-![Original with Icons!](img/original-with-icons-1.png "Original with Icons")
-![Original with Icons!](img/original-with-icons-2.png "Original with Icons")
-![Final without Icons!](img/original-without-icons-1.png "Original with Icons")
+![Original with Icons!](img/original-with-icons-1s.png "Original with Icons")
+![Original with Icons!](img/original-with-icons-2s.png "Original with Icons")
+![Final without Icons!](img/original-without-icons-3s.png "Original with Icons")
