@@ -20,6 +20,8 @@ GraphQL - Did an 'old-fashioned' technique of getting ALL data and then querying
 ### Future Developments
 It would be interesting to take the ingredients and see if it was possible to get the actual corresponding stock details from the database. Would then potentially have a really useful app on my phone in morning when trying to load the line!
 
+Would also be interesting to develop a fully functioning, customer-facing recipe app. With videos, other info, ordering system, etc.
+
 ### Dependencies
 - react-native
 - graphql
@@ -29,3 +31,5 @@ It would be interesting to take the ingredients and see if it was possible to ge
 ![Original with Icons!](img/original-with-icons-1s.png "Original with Icons")
 ![Original with Icons!](img/original-with-icons-2s.png "Original with Icons")
 ![Final without Icons!](img/original-without-icons-4s.png "Final without Icons")
+![Final without Icons!](img/original-without-icons-5s.png "Final without Icons")
+![Final without Icons!](img/original-without-icons-6s.png "Final without Icons")
