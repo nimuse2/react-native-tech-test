@@ -113,7 +113,7 @@ class Recipe extends Component {
   }
 
   render() {
-    
+
     if (this.state.loading) {
       return (
         <View style={styles.activity}>
@@ -149,11 +149,12 @@ class Recipe extends Component {
             (item.recipe.id == this.state.expandedIndexId) && this.state.expanded &&
             <View style={styles.child}>
                 {!isImage(item.recipe.media[0]) && (
-                    <Image 
-                      source={{ uri: imageFormat(item.recipe.media[0]) }} 
-                      style={styles.mainImg}
-                      sizeMode="cover"
-                    />
+                    <View style={styles.imgWrap}>
+                      <Image 
+                        source={{ uri: imageFormat(item.recipe.media[0]) }} 
+                        style={{aspectRatio: 1}}
+                      />
+                    </View>
                   )
                 }
                 <Text style={styles.bodyTitle}>{item.recipe.name}</Text>
@@ -161,6 +162,7 @@ class Recipe extends Component {
                 <Text style={styles.heavyTxt}>Ingredients:</Text>
                   <FlatList 
                     data={item.recipe.ingredients[0].ingredients}
+                    contentContainerStyle={{flexGrow: 1, justifyContent: 'left'}}
                     renderItem={({ item }) => (
                       <Text>
                         {/*<Icon name='keyboard-arrow-right' />*/}<Item title={item} />

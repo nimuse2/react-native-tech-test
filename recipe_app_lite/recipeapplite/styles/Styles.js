@@ -38,16 +38,17 @@ import {
     rowTitle:{
       fontSize: 18,
       color: '#5E5E5E',
-      width:240,
+      width:'80%',
+      paddingTop: 20,
     },
     row:{
         fontSize: 14,
         flexDirection: 'row',
-        justifyContent:'space-between',
+        // justifyContent:'space-between',
         height:70,
         paddingLeft:20,
         paddingRight:20,
-        alignItems:'center',
+        // alignItems:'center',
         backgroundColor: '#ececec',
     },
     ingredientlist: {
@@ -67,22 +68,23 @@ import {
     child:{
         backgroundColor: '#C7C7C7',
         padding:16,
+        
+        // flexDirection:1,
     },
     profileImg: {
       height: 60,
       width: 60,
       borderRadius: 30,
-    },
-    mainImg: {
-      height: 260,
-      width: 380,
+      marginRight:10,
+      marginTop: 5,
     },
     buttonColor: {
       backgroundColor: '#5E5E5E',
       color: '#ffffff',
       height: 40,
-      width:380,
-      borderRadius:10,
+      width:'100%',
+      alignSelf:'center',
+      borderRadius:2,
       marginTop :20
     },
     heavyTxt: {
@@ -97,7 +99,7 @@ import {
       margin: 10,
       fontSize: 14,
       borderWidth: 1,
-      borderRadius:10,
+      borderRadius:2,
       paddingLeft: 10,
       borderColor: '#5E5E5E',
       backgroundColor: '#FFFFFF',
