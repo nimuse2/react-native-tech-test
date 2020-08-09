@@ -6,7 +6,7 @@ IOS/Android: Only tested on IOS
 
 Haven't tested memory usage on devices
 
-### Notes:
+### Notes
 
 This is a 'lite' version. I tried to use Material UI that I used last year in ReactJs but struggled with linking the Icons in XCode. Somehow I got it working on my original devlopment version, but then couldn't get it to work when transferring files and rebuilding in github production folder. I need to do more investigating into how XCode works with React Native and icons/ fonts. 
 Have left in the commented out problem code: Recipe.js l15,16, 145, 168
