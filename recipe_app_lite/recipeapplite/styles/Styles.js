@@ -65,6 +65,13 @@ import {
       marginBottom: 5,
       fontWeight: 'bold',
     },
+    method: {
+      paddingBottom: 10,
+      paddingTop: 10,
+    },
+    cookTime: {
+      color: 'red',
+    },
     child:{
         backgroundColor: '#C7C7C7',
         padding:16,

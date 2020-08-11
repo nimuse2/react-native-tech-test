@@ -36,7 +36,7 @@ class Recipe extends Component {
   componentDidMount() {
     this.makeRemoteRequest();
   }
-
+  
   //GET DATA///////////
 
   makeRemoteRequest = () => {
@@ -44,7 +44,7 @@ class Recipe extends Component {
     fetch('https://next.riverford.co.uk/graphql', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query: '{ recipe_search { hits { recipe { id name short_description ingredients { ingredients } cook_time media { master_uri } }} } }'}),
+      body: JSON.stringify({ query: '{ recipe_search { hits { recipe { id name short_description method { steps } ingredients { ingredients } cook_time media { master_uri } }} } }'}),
     })
     .then(res => res.json())
     .then(res => {
@@ -61,7 +61,7 @@ class Recipe extends Component {
     });
 
   };
-  
+ 
 
   //MANIPULATE DATA//////////////////
   
@@ -70,7 +70,7 @@ class Recipe extends Component {
       value: text,
     });
 
-    const newData = this.arrayholder.filter(item => {
+      const newData = this.arrayholder.filter(item => {
 
       const textData = text;
       const itemData = item.recipe.name;
@@ -111,9 +111,10 @@ class Recipe extends Component {
     this.setState({expanded : !this.state.expanded})
     this.setState({expandedIndexId : item.recipe.id});
   }
+  
 
   render() {
-
+    
     if (this.state.loading) {
       return (
         <View style={styles.activity}>
@@ -159,6 +160,7 @@ class Recipe extends Component {
                 }
                 <Text style={styles.bodyTitle}>{item.recipe.name}</Text>
                 <Text>{item.recipe.short_description}</Text>
+              <Text style={styles.method} >{item.recipe.method[0].steps}</Text>
                 <Text style={styles.heavyTxt}>Ingredients:</Text>
                   <FlatList 
                     data={item.recipe.ingredients[0].ingredients}
@@ -171,14 +173,7 @@ class Recipe extends Component {
                     keyExtractor = {(item, index) => 'key'+index}
                   />  
                 <Text style={styles.heavyTxt}>Duration:</Text>
-                <Text> {timeFormat(item.recipe.cook_time)}</Text>
-                <TouchableHighlight 
-                  style ={styles.buttonColor}>
-                  <Button 
-                    title={'Order'}
-                    color='#ffffff'
-                  />
-                </TouchableHighlight>
+                <Text style={styles.cookTime}> {timeFormat(item.recipe.cook_time)}</Text>
             </View>
         }
       </View>
